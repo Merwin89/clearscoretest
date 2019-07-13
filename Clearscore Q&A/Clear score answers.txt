@@ -1,0 +1,20 @@
+1. How would you integrate the tests you have written into a continuous integration environment?
+ - Cover the most important regression cases
+ - Integrate them to a CI tool so that the tests are run automatically on every push from developers
+ - This should run separately for the Staging and Production environments
+
+2. How would you make your API test simulate being as realistic a user as possible?
+ - Test with realistic data
+ - Use different browsers
+ -  Use delays to simulate think time
+ - Test with different network speeds
+ -  Multiple requests like an impatient user
+ - Load test with sudden spikes and troughs
+ - Add load slowly and steadily
+ - Hit the api with a huge number of requests within a shot span of time
+
+3. How would you approach running the same tests across mobile devices and different browsers? 
+ - Cross browser testing can be handled by Selenium and the same test can be run for various browsers
+ - There are other tools available in teh market too with allow a tester to do this
+ - Mobile devices are a but difficult since there are lots of parameters like processor, memory, screen size, OS etc
+ - Emulators can be used for testing on mobile devices

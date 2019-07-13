@@ -1,0 +1,31 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ClearScore",
+		"_postman_id": "2d4022f1-23c6-bf2f-7c72-1df540687b98",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ClearScore",
+			"request": {
+				"url": "https://app.clearscore.com/api/in/login-service/v1/sign-in",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"dsfa@sa.com\",\"password\":\"asdf\",\"anonymousId\":\"1410ee5c-b610-4746-8bc9-0e5e0333c1e3\"}"
+				},
+				"description": "ClearScore test\t\t"
+			},
+			"response": []
+		}
+	]
+}
