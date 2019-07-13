@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="4058" started-at="2019-07-13T15:41:05Z" finished-at="2019-07-13T15:41:09Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="4058" started-at="2019-07-13T15:41:05Z" finished-at="2019-07-13T15:41:09Z">
+      <class name="clearscoretest.TestMain">
+        <test-method status="PASS" signature="Cookiewrite()[pri:0, instance:clearscoretest.TestMain@4439f31e]" name="Cookiewrite" duration-ms="15" started-at="2019-07-13T21:11:05Z" finished-at="2019-07-13T21:11:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cookiewrite -->
+        <test-method status="PASS" signature="Testcase1()[pri:0, instance:clearscoretest.TestMain@4439f31e]" name="Testcase1" duration-ms="4015" started-at="2019-07-13T21:11:05Z" finished-at="2019-07-13T21:11:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase1 -->
+      </class> <!-- clearscoretest.TestMain -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
