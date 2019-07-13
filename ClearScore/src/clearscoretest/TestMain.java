@@ -66,15 +66,14 @@ public class TestMain {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	//Boolean notification = driver.findElement(By.className("websiteCookieNotice--2LLwd")).isDisplayed();
 				
-		
+		//checking for the notification bar
 	try {
 		if(driver.findElement(By.className("websiteCookieNotice--2LLwd")) != null)
 		{
 			System.out.println("Cookie Notification is displayed?");
-			//System.out.println(notification);
 			
+			//Verifying that the notification can be dismissed
 			Boolean dismiss = driver.findElement(By.className("button---dYCq")).isDisplayed();
 			if(dismiss == true)
 			{
@@ -84,7 +83,7 @@ public class TestMain {
 			}
 			
 		}
-		
+		//verifying that the notification does not appear again
 	} catch (Exception e) {
 		// TODO Auto-generated catch block
 		System.out.println("The Notification is no longer present");
@@ -105,7 +104,7 @@ public class TestMain {
             BufferedWriter Bwrite = new BufferedWriter(fileWrite);							
             // loop for getting the cookie information 		
             	
-            // loop for getting the cookie information 		
+            		
             for(Cookie cookies : driver.manage().getCookies())							
             {			
                 Bwrite.write((cookies.getName()+"  "+cookies.getValue()+"  "+cookies.getDomain()+"  "+cookies.getPath()+"  "+cookies.getExpiry()+"  "+cookies.isSecure()));																									
@@ -114,7 +113,7 @@ public class TestMain {
             Bwrite.close();			
             fileWrite.close();
             System.out.println("The cookies are saved in ClearScoreCookies.data");
-            
+           // Writing the clearscore cookies to file
         }
         catch(Exception ex)					
         {		

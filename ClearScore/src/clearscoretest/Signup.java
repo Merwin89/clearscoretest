@@ -16,10 +16,11 @@ public class Signup extends TestMain {
     	Boolean signup_button = driver.findElement(By.xpath("/html/body/div[1]/div/div/div[1]/div/div/nav/div/ul/li[8]/a")).isDisplayed();
     	
     	Boolean	signup_button_enable = driver.findElement(By.xpath("/html/body/div[1]/div/div/div[1]/div/div/nav/div/ul/li[8]/a")).isEnabled();
+    	// Searching and verifying the Sign Up button is Displayed and Enabled
     	
     	if ((signup_button == true) &&(signup_button_enable == true))
     	{
-    		System.out.println("Sign up button is available and enabled to Click");
+    		System.out.println("Sign up button is available and enabled to Click"); 
     	}
     	else 
     	{
@@ -36,14 +37,14 @@ public class Signup extends TestMain {
 		}
     	
     	String URL = driver.getCurrentUrl();
-    	AssertJUnit.assertEquals(URL, "https://app.clearscore.com/signup" );
+    	AssertJUnit.assertEquals(URL, "https://app.clearscore.com/signup" );  //Comparing the url of the page with the expected result url
     	System.out.println("We are on the signup page since the url matches...yay!!");
     	
     	WebElement dropDown = driver.findElement( By.xpath( "//*[@id='signupform_region_input']" ) );
     	List<WebElement> allOptions = dropDown.findElements(By.xpath(".//option"));
     	//List<WebElement> elements = driver.findElements(By.xpath("//*[@id='signupform_region_input']"));
         System.out.println("Number of elements:" +allOptions.size());
-        System.out.println("Verifying if the list contains the countries: India, United Kingdom and South Africa");
+        System.out.println("Verifying if the list contains the countries: India, United Kingdom and South Africa"); // Finding the regions and verifying them against expected values
         System.out.println("Verification on the way");
         for (int i=0; i<allOptions.size();i++)
         {
@@ -67,7 +68,7 @@ public class Signup extends TestMain {
 		
         URL = driver.getCurrentUrl();
         
-    	if (URL.contains("https://app.clearscore.com/step1") == true)
+    	if (URL.contains("https://app.clearscore.com/step1") == true) //verifying the url contains this string to be sure we are in the right page
     	{
     		System.out.println("We are in the the Step 1 of registration!!!");
     	}
